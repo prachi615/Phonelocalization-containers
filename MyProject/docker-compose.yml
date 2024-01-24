@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+  data_collection:
+    build:
+      context: ./Data_Collection
+      dockerfile: Dockerfile
+
+  preprocessing:
+    build:
+      context: ./Preprocessing
+      dockerfile: Dockerfile
+
+  inference:
+    build:
+      context: ./Inference
+      dockerfile: Dockerfile
+
+  postgres:
+    build:
+      context: ./Database
+      dockerfile: Dockerfile
+    environment:
+      POSTGRES_DB: Wifi_Details
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 123456
