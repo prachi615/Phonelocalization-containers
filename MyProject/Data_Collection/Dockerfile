@@ -9,10 +9,10 @@ COPY requirements.txt .
 
 
 # Copy the current directory contents into the container at /app
-#COPY . /app
+COPY . /app
 
 # Install any needed packages specified in requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Run data collection script when the container launches
-CMD ["python", "data_collection.py"]
+CMD ["python", "-u", "data_collection.py"]
