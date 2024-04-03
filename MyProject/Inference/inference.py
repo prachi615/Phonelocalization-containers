@@ -2,9 +2,7 @@
 
 def run_inference(preprocessed_data):
     # Implement your inference logic here
-
     x=0
-
     # print("Running inference on preprocessed data:")
     # print(preprocessed_data)
 

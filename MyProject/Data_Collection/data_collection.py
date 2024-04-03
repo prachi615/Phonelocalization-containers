@@ -93,7 +93,8 @@ def store_data(device_data):
     """
     
     # Execute the INSERT statement
-    cur.execute(insert_query, entry)
+    if len(entry) == 7:
+        cur.execute(insert_query, entry)
 
     conn.commit()
 
@@ -119,6 +120,8 @@ def main():
     client.on_connect = on_connect
     client.on_message = on_message
     client.connect(MQTT_BROKER, MQTT_PORT, 60)
+    #this publish tests that we can send messages on the topic test/topic to another broker
+    # client.publish("test/topic", "Hello_MQTT")
     client.loop_start()
     
     while True:
