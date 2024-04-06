@@ -13,8 +13,10 @@ def preprocess_data(raw_data):
 
 def store_preprocessed_data(preprocessed_data):
     # Implement database storage logic here
-    print("Storing preprocessed data:")
-    print(preprocessed_data)
+    x=0
+
+    # print("Storing preprocessed data:")
+    # print(preprocessed_data)
 
 def main():
     while True:

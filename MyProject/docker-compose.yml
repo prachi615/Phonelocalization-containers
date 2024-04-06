@@ -6,6 +6,7 @@ services:
       context: ./Data_Collection
       dockerfile: Dockerfile
 
+
   preprocessing:
     build:
       context: ./Preprocessing
