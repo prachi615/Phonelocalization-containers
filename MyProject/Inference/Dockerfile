@@ -14,4 +14,4 @@ COPY . /app
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Run inference script when the container launches
-CMD ["python", "inference.py"]
+CMD ["python", "-u", "inference.py"]
