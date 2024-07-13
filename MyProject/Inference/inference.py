@@ -2,8 +2,9 @@
 
 def run_inference(preprocessed_data):
     # Implement your inference logic here
-    print("Running inference on preprocessed data:")
-    print(preprocessed_data)
+    x=0
+    # print("Running inference on preprocessed data:")
+    # print(preprocessed_data)
 
 def main():
     while True:

@@ -21,3 +21,10 @@ MyProject folder contains below files:
    Dockerfile
 requirements.txt
 Docker-compose.yml
+
+Deployment Instructions:
+1. Running Docker Containers
+   - The docker engine should be installed on the server, if not install that first. More information can be found on the docker website: https://docs.docker.com/desktop/install/linux-install/.
+   - Run "docker-compose up --build" to start the server.
+   - To shutdown the server, or recompile new code, Ctrl+C to shutdown the server.
+   - Then repeat process if to start and launch server.
